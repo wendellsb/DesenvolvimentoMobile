@@ -1,0 +1,101 @@
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #333;
+  --color-text-main: red;
+  --color-primary: #FFFF00;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HKGrotesk";
+  --font-family-header: "HKGrotesk";
+}
+
+@font-face {
+  font-family: HKGrotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HKGrotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: HKGrotesk;
+  background-color: var(--color-bg);
+}
+
+header {  
+  color: #FFF;      
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 105%;
+  margin: 12px 250px 12px 250px;  
+  border-bottom: 4px solid #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+footer {
+  font-size: 14px;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+  margin: 12px 250px 12px 250px;
+  border-top: 4px solid #FFF;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 12px 0 0 0;
+  font-size: 20px;
+}
+
+main div * {
+  margin: 0 6px 0 6px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button  {
+  font-family: HKGrotesk;
+  padding: 12px 12px;
+  font-size: 16px;
+  line-height: 1px;
+  height: 20px;
+  align-items: center;
+  cursor: pointer;
+  background: yellow;
+  border: 3px solid #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: red;
+}
+
+button:disabled,
+button[disabled]{
+  border: 3px solid #000;
+  background-color: blue;
+  color: #fff;
+}
+
+div {
+  margin: 12px 0 12px 0;  
+  color: #fff;
+}
+
